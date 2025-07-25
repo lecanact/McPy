@@ -242,7 +242,7 @@ def networker(sharedManager, players, loggingQueue: multiprocessing.Queue):
     factory.motd = "Chat Room"
     factory.logging = loggingQueue
     logging.info("Starting networking worker")
-    listener = ("0.0.0.0", 25565)
+    listener = ("0.0.0.0", 19132)
     try:
         factory.listen(*listener)
         log(loggingQueue, "Startup done! Listening on {0[0]}:{0[1]}".format(listener), "Networker")
