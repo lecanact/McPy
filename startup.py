@@ -70,7 +70,7 @@ def getReleases() -> list:
     except NameError:
         pass  # Some people want to kill me for this but there's a meaning behind it
     logging.info("Getting release list...")
-    releaseFile = requests.get("https://raw.githubusercontent.com/tazz4843/McPy/master/releases.json")  # All releases
+    releaseFile = requests.get("https://raw.githubusercontent.com/lecanact/McPy/master/releases.json")  # All releases
     try:
         releaseFile.raise_for_status()
     except requests.exceptions.RequestException as ex:
